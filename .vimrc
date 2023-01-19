@@ -9,6 +9,8 @@ syntax on                   "syntax on
     set ts=4        "tab size
     set bg=dark     "background color
     set mouse-=a    "visual mode disable
+    set incsearch   "blocking when search pattern
+    set hlsearch    "highlighting searched pattern
 
 "------------------------------------------------------------------------"
 "   cscope database path setting
