@@ -24,15 +24,10 @@ syntax on                   "syntax on
     set csverb
 
 "------------------------------------------------------------------------"
-"   Tag List setting
+"   NERD Tree setting
 "------------------------------------------------------------------------"
-    filetype on
-    nmap <F7> :TlistToggle<CR>
-    let Tlist_Ctags_Cmd = "/usr/bin/ctags"
-    let Tlist_Inc_Winwidth = 0 
-    let Tlist_Exit_OnlyWindow = 0 
-    let Tlist_Auto_Open = 0 
-    let Tlist_Use_Right_Window = 1 
+    let NERDTreeWinPos = "left"
+    nmap <F7> :NERDTreeToggle<CR>
 
 "------------------------------------------------------------------------"
 "   Source Explorer setting
@@ -50,7 +45,12 @@ syntax on                   "syntax on
     let g:SrcExpl_isUpdateTags = 0 
 
 "------------------------------------------------------------------------"
-"   NERD Tree setting
+"   Tag List setting
 "------------------------------------------------------------------------"
-    let NERDTreeWinPos = "left"
-    nmap <F9> :NERDTreeToggle<CR>
+    filetype on
+    nmap <F9> :TlistToggle<CR>
+    let Tlist_Ctags_Cmd = "/usr/bin/ctags"
+    let Tlist_Inc_Winwidth = 0 
+    let Tlist_Exit_OnlyWindow = 0 
+    let Tlist_Auto_Open = 0 
+    let Tlist_Use_Right_Window = 1 
