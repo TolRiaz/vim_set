@@ -5,7 +5,24 @@
     set ai          "auto indent
     set ts=4        "tab size
     set bg=dark     "background color
-    set mouse-=a    "visual mode diable
+    set mouse-=a    "visual mode disable
+    
+    " Uncomment the next line to make Vim more Vi-compatible
+    " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
+    " options, so any other options should be set AFTER setting 'compatible'.
+    set compatible
+
+    " Vim5 and later versions support syntax highlighting. Uncommenting the next
+    " line enables syntax highlighting by default.
+    syntax on
+
+    " Uncomment the following to have Vim jump to the last position when
+    " reopening a file
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+    " Uncomment the following to have Vim load indentation rules and plugins
+    " according to the detected filetype.
+    filetype plugin indent on
 
 "------------------------------------------------------------------------"
 "   cscope database path setting
