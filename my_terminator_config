@@ -1,0 +1,38 @@
+# if not exists config file, create config file
+# path = ~/.config/terminator/config
+
+[global_config]
+  handle_size = 0
+  focus = system
+  title_receive_fg_color  = "#000000"
+  title_receive_bg_color  = "#d6e6f5"
+  title_transmit_fg_color = "#000000"
+  title_transmit_bg_color = "#b5d692"
+  title_inactive_fg_color = "#000000"
+  title_inactive_bg_color = "#b1beb1"
+[keybindings]
+    close_term = None
+    close_window = None
+	reset_clear = None
+	search = None
+    broadcast_group = <Ctrl><Shift>G
+    broadcast_off = <Ctrl><Shift>F
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      size = 800, 600
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    scrollback_infinite = True
+    use_system_font = False
+    background_darkness = 0.83
+    background_type = transparent
+    background_image = None
+    show_titlebar = True
+    font = Monospace 10
